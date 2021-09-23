@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,18 +13,18 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Salvando Vidas</title>
+    <title>Eu quero me matar...</title>
   </head>
   <body>
-      <nav class="nav">
-          <div class="container">
+    <nav class="nav">
+        <div class="container">
             <div class="logo">
-                <a href="#">Salvando Vidas</a>
+                <a href="#">Eu quero me matar!</a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Servicos</a></li>
+                    <li><a href="#">Serviços</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
             </div>
@@ -37,7 +37,17 @@
     </nav>
 
     <section class="home">
-        <img src="assets/depression-bg.jpg" class="img-home">
+        <div class="container" style="padding-top: 65px;padding-right: 180px;">
+            <div class="h2text">
+                <h2 class="question1">
+                    Você está pensando em se Matar?
+                    <div class="resposta">
+                        <button class="btnchoose"><a href="etapa2.html">Sim</a></button>
+                        <button class="btnchoose"><a href="index.html">Não</a></button>
+                    </div>
+                </h2>
+            </div>
+        </div>
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
@@ -62,7 +72,7 @@
     <script src="js/scripts.js"></script>
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <!-- <script>
+    <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('.nav').addClass('affix');
@@ -71,6 +81,6 @@
                 $('.nav').removeClass('affix');
             }
         });
-    </script> -->
+    </script>
   </body>
 </html>
