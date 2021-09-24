@@ -8,32 +8,60 @@ body {
     font-size: 62.5%;
     font-size: 10px;
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
-
-/* Navbar section */
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3.5rem;
+    transition: .5s;
+}
+a:hover{
+    transition: .5s;
+    color: rgb(247, 168, 0);
+}
+h2{
+    height: 10vh;
+    font-size: 40px;
+    position: relative;
+    display: flex;
+    margin-top: 85px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .btnresposta{
     background: #111;
     border: none;
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) 1px 2px 5px;
     color: #fff;
-    margin: 15px 15px;
+    margin: 10px 15px;
     font-size: 22px;
+    min-width: 100px;
+    padding: 5px 20px;
 }
 #resposta{
-    display: grid;
-}
-.nav {
-    flex-wrap: nowrap;
+    display: flex;
     align-items: center;
-    width: 100%;
-    height: 65px;
-    position: fixed;
-    line-height: 65px;
-    text-align: center;
-    padding-bottom: 65px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
+
+#question{
+    color: #fff !important;
+}
+
+.h2text{
+    transition: 1s ease-in-out;
+    padding-top: 65px;
+}
+
+/*-- Inspiration taken from abdo steif -->
+/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+/* Navbar section */
 
 .nav div.logo {
     float: left;
@@ -49,7 +77,7 @@ body {
 }
 
 .nav div.logo a:hover {
-    color: #525252;
+    color: #00E676;
 }
 
 .nav div.main_list {
@@ -81,70 +109,55 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: #fdaf70;
+    color: #00E676;
 }
 
 
 /* Home section */
-#question{
-    color: #fff !important;
-}
 
-.h2text{
-    transition: 1s ease-in-out;
-    width: 532px;
-}
-a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 3.5rem;
-    transition: .5s;
-}
-a:hover{
-    transition: .5s;
-    color: rgb(247, 168, 0);
-}
-h2{
-    height: 10vh;
-    font-size: 40px;
-    position: relative;
-    display: flex;
-    margin-top: 85px;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
 .home {
     width: 100%;
     height: 100vh;
     background-image: url("../assets/depression-blur.jpg");
-    background-position: center top;
-	background-size:cover;
+    background-position: right;
+    background-size:cover;
 }
-
 .navTrigger {
     display: none;
 }
 
 .nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    line-height: 65px;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    z-index: 10;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
 }
-
+.navbar{
+    background: #000;
+    height: 65px;
+}
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 998px) and (max-width: 1024px) {
     .container {
         margin: 0;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:998px) {
     .navTrigger {
         display: block;
     }
@@ -390,17 +403,17 @@ h2{
 
 
 .myH2 {
-	text-align:center;
+    text-align:center;
 	font-size: 4rem;
 }
 .myP {
-	text-align: justify;
+    text-align: justify;
 	padding-left:15%;
 	padding-right:15%;
 	font-size: 20px;
 }
 @media all and (max-width:700px){
-	.myP {
-		padding:2%;
+    .myP {
+        padding:2%;
 	}
 }

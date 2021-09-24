@@ -20,6 +20,32 @@ var questionario = [
         nextquestion1: 0,
         nextquestion2: 1,
     },
+// dever de casa
+    {
+        pergunta:"Torce pra que time?",
+        options: [
+            {
+                texto:"Flamengo",
+                next: 1,
+
+            },
+            {
+                texto:"Vasco",
+                next: 2,
+
+            },
+            {
+                texto:"Fluminense",
+                next: 0,
+
+            },
+            {
+                texto:"São Paulo",
+                next: 3,
+
+            }
+        ]
+    },
 ]
 
 
