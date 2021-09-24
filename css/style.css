@@ -12,15 +12,17 @@ body {
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
 
 /* Navbar section */
-.btnchoose{
+.btnresposta{
     background: #111;
     border: none;
     border-radius: 15px;
     box-shadow: rgb(0, 0, 0) 1px 2px 5px;
     color: #fff;
     margin: 15px 15px;
-
-
+    font-size: 22px;
+}
+#resposta{
+    display: grid;
 }
 .nav {
     flex-wrap: nowrap;
@@ -84,9 +86,13 @@ body {
 
 
 /* Home section */
+#question{
+    color: #fff !important;
+}
+
 .h2text{
     transition: 1s ease-in-out;
-
+    width: 532px;
 }
 a{
     text-decoration: none;
@@ -99,12 +105,11 @@ a:hover{
     color: rgb(247, 168, 0);
 }
 h2{
-    color: #fff;
-    height: 100vh;
+    height: 10vh;
     font-size: 40px;
     position: relative;
     display: flex;
-    padding-top: 65px;
+    margin-top: 85px;
     align-content: center;
     justify-content: center;
     flex-direction: column;

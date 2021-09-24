@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Eu quero me matar...</title>
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
   </head>
   <body>
     <nav class="nav">
@@ -39,13 +54,10 @@
     <section class="home">
         <div class="container" style="padding-top: 65px;padding-right: 180px;">
             <div class="h2text">
-                <h2 class="question1">
-                    Você está pensando em se Matar?
-                    <div class="resposta">
-                        <button class="btnchoose"><a href="etapa2.html">Sim</a></button>
-                        <button class="btnchoose"><a href="index.html">Não</a></button>
-                    </div>
+                <h2 id="question">
                 </h2>
+                <div id="resposta">
+                </div>
             </div>
         </div>
     </section>
@@ -67,20 +79,5 @@
 			</p>
     </div>
 
-<!-- Jquery needed -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
-
-<!-- Function used to shrink nav bar removing paddings and adding black background -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
   </body>
 </html>
